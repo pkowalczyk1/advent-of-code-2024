@@ -1,42 +1,16 @@
 package pl.pk.adventofcode
 
-import pl.pk.adventofcode.day23.LANParty
+import pl.pk.adventofcode.day2.ReindeerReports
 
 fun main() {
     val input = """
-        kh-tc
-        qp-kh
-        de-cg
-        ka-co
-        yn-aq
-        qp-ub
-        cg-tb
-        vc-aq
-        tb-ka
-        wh-tc
-        yn-cg
-        kh-ub
-        ta-co
-        de-co
-        tc-td
-        tb-wq
-        wh-td
-        ta-ka
-        td-qp
-        aq-cg
-        wq-ub
-        ub-vc
-        de-ta
-        wq-aq
-        wq-vc
-        wh-yn
-        ka-de
-        kh-ta
-        co-tc
-        wh-qp
-        tb-vc
-        td-yn
+        7 6 4 2 1
+        1 2 7 8 9
+        9 7 6 2 1
+        1 3 2 4 5
+        8 6 4 4 1
+        1 3 6 7 9
     """.trimIndent()
 
-    println(LANParty.getPartyPassword(input))
+    println(ReindeerReports.countSafeReports(input))
 }
