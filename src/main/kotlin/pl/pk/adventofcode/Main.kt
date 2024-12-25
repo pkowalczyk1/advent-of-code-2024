@@ -1,9 +1,20 @@
 package pl.pk.adventofcode
 
-import pl.pk.adventofcode.day3.Multiplications
+import pl.pk.adventofcode.day4.XmasSearch
 
 fun main() {
-    val input = """xmul(2,4)&mul[3,7]!^don't()_mul(5,5)+mul(32,64](mul(11,8)undo()?mul(8,5)"""
+    val input = """
+        MMMSXXMASM
+        MSAMXMSMSA
+        AMXSXMAAMM
+        MSAMASMSMX
+        XMASAMXAMM
+        XXAMMXXAMA
+        SMSMSASXSS
+        SAXAMASAAA
+        MAMMMXMMMM
+        MXMXAXMASX
+    """.trimIndent()
 
-    println(Multiplications.getMultiplicationsResult(input))
+    println(XmasSearch.getMasInXCount(input))
 }
