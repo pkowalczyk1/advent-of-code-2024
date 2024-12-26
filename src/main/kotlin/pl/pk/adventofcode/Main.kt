@@ -1,20 +1,49 @@
 package pl.pk.adventofcode
 
-import pl.pk.adventofcode.day4.XmasSearch
+import pl.pk.adventofcode.day25.Keys
 
 fun main() {
     val input = """
-        MMMSXXMASM
-        MSAMXMSMSA
-        AMXSXMAAMM
-        MSAMASMSMX
-        XMASAMXAMM
-        XXAMMXXAMA
-        SMSMSASXSS
-        SAXAMASAAA
-        MAMMMXMMMM
-        MXMXAXMASX
+#####
+.####
+.####
+.####
+.#.#.
+.#...
+.....
+
+#####
+##.##
+.#.##
+...##
+...#.
+...#.
+.....
+
+.....
+#....
+#....
+#...#
+#.#.#
+#.###
+#####
+
+.....
+.....
+#.#..
+###..
+###.#
+###.#
+#####
+
+.....
+.....
+.....
+#....
+#.#..
+#.#.#
+#####
     """.trimIndent()
 
-    println(XmasSearch.getMasInXCount(input))
+    println(Keys.countFittingLockKeyPairs(input))
 }
